@@ -33,7 +33,12 @@ def json_yedekleme():
 st.set_page_config(
     page_title="Limonatalı Hayal Panosu",
     page_icon="🍋💜",
-    layout="wide"
+    layout="wide",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': "Limonatalı Hayal Panosu 🍋💜 Hayaller burada çiçek açar 🌸"
+    }
 )
 
 # 🌸 Lavanta görseli
@@ -45,6 +50,11 @@ st.markdown("""
         <h2 style='color:#A45EE5;'>Lavanta tarlasına hoş geldin.</h2>
         <p style='font-size: 1.2rem;'>Hayalini nereye ekmek istersin?<br>
         Bu panoda kurulan her hayal, bir gün gerçek olur.</p>
+        <a href="https://limonataligunlukler.netlify.app" target="_blank">
+            <button style='margin-top: 20px; font-size: 16px; padding: 10px 25px; background-color: #eecff2; color: #4a3f35; border: none; border-radius: 10px;'>
+                📖 Günlüklere Göz At
+            </button>
+        </a>
     </div>
 """, unsafe_allow_html=True)
 
@@ -54,10 +64,6 @@ st.markdown("""
     <p style='text-align: center; color: #4a3f35;'>Hayallerin birikme yeri, umutların dijital evi...</p>
     <hr style='margin-top: 20px; margin-bottom: 40px;'>
 """, unsafe_allow_html=True)
-
-# 📖 Bloga geçiş butonu
-if st.button("📖 Limonatalı Günlükler'e Git"):
-    webbrowser.open_new_tab("file:///Users/sultan/Documents/limonatalı_günlükler/index.html")
 
 # 🎉 Başlatma mesajı
 st.success("Hayal Panosu başlatıldı! 🎉 Şimdi yeni hayalini eklemeye ne dersin?")
@@ -85,3 +91,21 @@ elif secenek == "İstatistiklere Göz At":
     istatistik_goster()
 elif secenek == "JSON Yedekle 📥":
     json_yedekleme()
+
+# 🌸 Sosyal Bağlantılar (Sayfa Sonu)
+
+st.markdown("""
+<hr style='margin-top: 50px; margin-bottom: 20px;'>
+<div style='text-align: center;'>
+    <a href="https://www.instagram.com/hayalpanosuapp/" target="_blank">
+        <button style='font-size: 16px; padding: 10px 25px; background-color: #f8d6f0; color: #4a3f35; border: none; border-radius: 8px;'>
+            📸 Instagram'da Takip Et
+        </button>
+    </a>
+    <a href="https://www.buymeacoffee.com/mavisoftstudios" target="_blank">
+        <button style='font-size: 16px; padding: 10px 25px; background-color: #ffe6b3; color: #4a3f35; border: none; border-radius: 8px; margin-left: 15px;'>
+            ☕ Bir Limonata Ismarlamak İster misin?
+        </button>
+    </a>
+</div>
+""", unsafe_allow_html=True)
