@@ -1,0 +1,131 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Merriweather', serif;
+  color: #4B2E39;
+  background-color: #fef9f5;
+  background-image: url('../assets/lavanta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Başlıklar */
+h1 {
+  color: #8e79a8;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #B76E79;
+  margin-bottom: 1rem;
+}
+
+/* Paragraflar */
+p {
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+/* Liste */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: #f0e6f6;
+  border: 1px solid #d8c8e6;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e6dbf0;
+}
+
+/* Linkler */
+a {
+  text-decoration: none;
+  color: #5a4b7e;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #C8A2C8;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #A7D3F5;
+}
+
+/* Main içeriği */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(200, 162, 200, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+/* Yazar imzası */
+.author {
+  font-style: italic;
+  color: #826e8b;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+.lavanta-banner {
+  width: 100%;
+  max-height: 300px; /* istersen 250px ya da 400px gibi ayarla */
+  object-fit: cover;
+  border-bottom: 3px solid #C8A2C8;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(200, 162, 200, 0.3);
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Container ve Liste Şeffaflık */
+.container, ul {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+}
+.okur-izi {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+  color: #6b4e71;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(107, 78, 113, 0.2);
+}
